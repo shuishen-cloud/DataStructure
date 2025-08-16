@@ -1,0 +1,11 @@
+{
+    // * 设置 clangd 日志输出可见和 clangd 路径
+    "clangd.arguments": ["--log=verbose"],
+    "clangd.path": "/usr/bin/clangd",
+    
+    // ? cmake.sourceDirectory 是不是可以省去呢？还没有测试
+    // "cmake.sourceDirectory": "/home/lwy/project/infra_project/",
+    
+    // ? 文字问题我还没有考虑很清楚
+    // "editor.fontFamily": "Fira Code Regular, '霞鹜文楷', Consolas, monospace"
+}
