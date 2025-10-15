@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CMake Debug",  // 调试配置名称（可自定义）
+      "type": "lldb",       // 调试器类型（GDB/LLDB 对应 cppdbg，MSVC 对应 cppvsdbg）
+      "request": "launch",    // 启动方式（launch 直接启动程序，attach 附加到运行中的进程）
+      "program": "${command:cmake.launchTargetPath}",  // 可执行程序路径（由 CMake Tools 自动获取）
+      "args": [],             // 程序运行参数（按需添加）
+      "stopAtEntry": false,   // 是否在程序入口（main 函数）自动暂停
+      "cwd": "${workspaceFolder}",  // 工作目录（项目根目录）
+      "environment": [],
+      "externalConsole": false,  // 是否使用外部控制台（建议 false，在 VS Code 内置终端输出）
+      "MIMode": "gdb",        // 调试器模式（GDB 对应 gdb，LLDB 对应 lldb，MSVC 无需设置）
+      "setupCommands": [
+        {
+          "description": "为 gdb 启用整齐打印",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      // "preLaunchTask": "CMake: build",  // 调试前自动执行的任务（编译最新代码）
+      // "miDebuggerPath": "/usr/bin/gdb", // 调试器路径（如 GDB 路径，Windows 可能为 "C:/MinGW/bin/gdb.exe"，可选）
+      // "setupCommands": [
+      //   {
+      //     "description": "Enable pretty-printing for gdb",
+      //     "text": "-enable-pretty-printing",
+      //     "ignoreFailures": true
+      //   }
+      // ],
+      // "logging": {
+      //   "moduleLoad": false,
+      //   "trace": true
+      // }
+    }
+  ]
+}

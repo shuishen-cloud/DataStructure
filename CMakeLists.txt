@@ -11,10 +11,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # ! 替换掉 ProjectName 来设置项目名称，设置 PROJECT_NAME 变量值
-project(ProjectName)
+project(DataStructure)
 
 # 设置编译源文件的目录为 src 下所有 cpp 文件，也可根据文件目录结构添加
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
+
 # 可执行文件，默认会在 /build 文件中生成一个项目同名的可执行文件
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+# 设置头文件路径：include/ 是公共目录，对 DaatStructure 可见
+target_include_directories(DataStructure
+    PUBLIC  # 若其他目标依赖 my_app，也会继承该路径
+    ${CMAKE_CURRENT_SOURCE_DIR}/include  # 绝对路径（推荐）
+)

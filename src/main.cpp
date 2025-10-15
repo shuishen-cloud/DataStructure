@@ -10,10 +10,13 @@
  */
 
 #include <iostream>
+#include "test.h"
 
 int main(void){
     
     std::cout << "Hello from CMakeProject!" << std::endl;
+
+    test::test_func();    // test.h 头文件测试
 
     return 0;
 }

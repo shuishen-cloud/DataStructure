@@ -2,6 +2,7 @@
     // * 设置 clangd 日志输出可见和 clangd 路径
     "clangd.arguments": ["--log=verbose"],
     "clangd.path": "/usr/bin/clangd",
+    "editor.fontSize": 13.8,
     
     // ? cmake.sourceDirectory 是不是可以省去呢？还没有测试
     // "cmake.sourceDirectory": "/home/lwy/project/infra_project/",
