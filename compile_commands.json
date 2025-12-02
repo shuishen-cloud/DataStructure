@@ -1,8 +1,8 @@
 [
 {
-  "directory": "/home/lwy/project/DataStucture/build",
-  "command": "/usr/sbin/clang++ -I/home/lwy/project/DataStucture/include -g -std=gnu++17 -o CMakeFiles/DataStructure.dir/src/main.cpp.o -c /home/lwy/project/DataStucture/src/main.cpp",
-  "file": "/home/lwy/project/DataStucture/src/main.cpp",
+  "directory": "/data/data/com.termux/files/home/proejct/DataStructure/build",
+  "command": "/data/data/com.termux/files/usr/bin/c++  -I/data/data/com.termux/files/home/proejct/DataStructure/include -O2 -g -DNDEBUG -std=gnu++17 -o CMakeFiles/DataStructure.dir/src/main.cpp.o -c /data/data/com.termux/files/home/proejct/DataStructure/src/main.cpp",
+  "file": "/data/data/com.termux/files/home/proejct/DataStructure/src/main.cpp",
   "output": "CMakeFiles/DataStructure.dir/src/main.cpp.o"
 }
 ]
