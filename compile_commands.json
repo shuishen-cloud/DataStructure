@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/lwy/project/DataStucture/build",
+  "command": "/usr/sbin/clang++ -I/home/lwy/project/DataStucture/include -g -std=gnu++17 -o CMakeFiles/DataStructure.dir/src/main.cpp.o -c /home/lwy/project/DataStucture/src/main.cpp",
+  "file": "/home/lwy/project/DataStucture/src/main.cpp",
+  "output": "CMakeFiles/DataStructure.dir/src/main.cpp.o"
+}
+]
